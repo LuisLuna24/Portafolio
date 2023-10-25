@@ -3,58 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-    <section>
-        <form class="Registro" id="Registrar" name="Registrar">
-            <label>Matrucula</label>
-            <input type="text" id="Matricula" >
-            <label>Nombre/s</label>
-            <input type="text" id="Nombre">
-            <label>Apellidos</label>
-            <input type="text" id="Apellidos" >
-            <label>Carrera</label>
-            <input type="text" id="Carrera" >
-            <label class="Matricula_Err" id="Matricula_Err">Ingrese Nombre</label>
-            
-        </form>
-        <input type="submit" id="Registrar_btn" value="Registrar">
-        
-    </section>
+    <header class="header">
+        <div class="back">
+            <div class="menu container">
+                <a href="index.html" class="logo">Luna</a>
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="img/lista.png" alt="" class="menu-icono">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="Principal.html">Inicio</a></li>
+                        <li><a href="Principal.html">Conóceme</a></li>
+                        <li><a href="php/cerrar.php">Proyectos</a></li>
+                        <li><a href="php/cerrar.php">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <section class="Cabezera">
+        <div class="Cabezera_Contenedor">
+            <div class="Cabezera_Datos">
+                <div class="Cabezera_Datos_Elementos">
+                    <div class="Cabezera_Titulo">
+                        <h1>Full-Stack Web</h1>
+                        <h2>Developer</h2>
+                    </div>
+                    <div class="Cabezera_Titulo">
+                        <h1>Diseñador Gráfico</h1>
+                        <h2>Publicidad</h2>
+                    </div>
+                </div>
+                <div class="Cabezera_Datos_Elementos">
+                    <p>Hola soy Luis Luna<br>un desarrollador Full-Stack Web<br>y diseñador gráfico en publicidad<br>de México </p>
+                    <a href="https://github.com/LuisLuna24"><img src="img/git.webp" alt="Git"></a>
+                </div>
+            </div>
+            <div class="Cabezera_Datos">
+                <img src="img/Foto.webp" alt="Foto de Luna">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
-
-<script type="text/javascript">
-    $("#Registrar_btn").click(function(){
-        var txt;
-        var r = confirm("Deseas agregar a este empleado?");
-    if (r == true) {
-        cadena = "matricula=" + $('#Matricula').val() + 
-        "&nombre=" + $('#Nombre').val() +
-        "&apellidos=" + $('#Apellidos').val() +
-        "&carrera=" + $('#Carrera').val() +
-        "&accion=" + 1;
-
-        $.ajax({
-            url:'php/Registros.php',
-            type: "POST",
-            data: cadena,
-            success: function(r){
-                if (r == 1) {
-                    alert("Este usuario ya ha sido registrado");
-                } else if (r == 0) {
-                    alert("Agregado con exito");
-                    location.reload();
-
-                } else {
-                    alert("Fallo al agregar");
-                }
-            }
-        });
-    }
-});
-</script>
