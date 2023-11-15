@@ -207,6 +207,8 @@ body{
   padding: 50px;
   font-size: 2em;
   color: #f6f6f6;
+  text-align: center;
+  
 }
 
 .Abilidades_Card {
@@ -221,6 +223,9 @@ body{
 @media(max-width:767px){
   .Abilidades_Contenedor{
     flex-direction: column;
+  }
+  .Abilidades_Titulo{
+    margin: 20px;
   }
   .Abilidades_Card {
     width: 90%;
