@@ -183,12 +183,32 @@ body{
   width: 100%;
   min-height: 80vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.Abilidades_Contenedor{
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: center ;
   justify-content: space-around;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
   gap: 30px;
+
 }
+
+.Abilidades_Titulo{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  font-size: 2em;
+  color: #f6f6f6;
+}
+
 .Abilidades_Card {
   width: 450px;
   background-image: linear-gradient(125deg, #ed00ff 0, #cd01ff 25%, #ac10f8 50%, #8a17eb 75%, #671bdf 100%);
@@ -199,7 +219,7 @@ body{
 }
 
 @media(max-width:767px){
-  .Abilidades{
+  .Abilidades_Contenedor{
     flex-direction: column;
   }
   .Abilidades_Card {
@@ -300,6 +320,12 @@ body{
 
 .WEB_FONDO{
   background: linear-gradient(#19182572,#19182572),url('../img/Webfondo.webp')no-repeat;
+  background-size: cover;
+  background-position: cover;
+}
+
+.Diseño_Fondo{
+  background: linear-gradient(#1918259d,#1918259d),url('../img/Diseñofondo.webp')no-repeat;
   background-size: cover;
   background-position: cover;
 }
