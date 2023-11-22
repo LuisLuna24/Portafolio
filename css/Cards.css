@@ -1,0 +1,122 @@
+.Proyectos {
+    width: 100%;
+    min-height: 50vh;
+    padding: 20px;
+}
+.Proyectos_Contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.Proyectos_Titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f6f6f6;
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;;
+    margin-top: 20px;
+    text-align: center;
+}
+.Proyectos_Titulo h2 {
+    font-size: 2.5em;
+    color: #865dff;
+}
+
+.Proyectos_Card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    place-items: center;
+    gap: 20px;
+
+}
+.Card {
+    width: 270px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+    background-image: linear-gradient(125deg, #ed00ff 0, #cd01ff 25%, #ac10f8 50%, #8a17eb 75%, #671bdf 100%);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.Card_titulo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f6f6f6;
+    font-size: 1.3em;
+}
+.Card_titulo h2{
+    color: #191825;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Card_Imagen {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.589);
+}
+.Card_Imagen img{
+    width: 100%;
+    height: 100%;
+    
+}
+.Card_Descripcion {
+    width: 100%;
+    height: 80px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    color: #f6f6f6;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+.Card_Descripcion::-webkit-scrollbar{
+    width: 12px;
+    background-color: #19182563;
+    border-radius:25px ;
+}
+.Card_Descripcion::-webkit-scrollbar-thumb{
+    width: 12px;
+    background: rgb(87, 1, 75);
+    border-radius:25px ;
+}
+
+.Card_Tecnologias_Titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family:'Montserat',sans-serif;
+    color: #f6f6f6;
+    font-size: 1.3em;
+}
+
+
+.Card_Tecnologias {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.Card_Tecnologias img{
+    width: 30px;
+}

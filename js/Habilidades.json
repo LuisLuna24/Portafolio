@@ -1,0 +1,24 @@
+[
+    {
+        "id":"1",
+        "name":"TESI CCAI",
+        "info":"Sitio Web de CCAI TESI",
+        "Tecnologie":["imgjson/html-5.webp","imgjson/css-3.webp","imgjson/php.webp","imgjson/js.webp","imgjson/Jquery.webp"],
+        "Imagen":"js/imgjson/Tesi.webp"
+
+    },
+    {
+        "id":"2",
+        "name":"Leviatan Wear",
+        "info":"Sitio Web de Leviatan Wear para venta de playeras y apartado de rutinas",
+        "Tecnologie":["imgjson/html-5.webp","imgjson/css-3.webp","imgjson/php.webp","imgjson/js.webp"],
+        "Imagen":"js/imgjson/Leviatan.webp"
+    },
+    {
+        "id":"3",
+        "name":"Mi Portafolio",
+        "info":"Sitio Web de mi portafolio con apartado de mis servicios",
+        "Tecnologie":["imgjson/html-5.webp","imgjson/css-3.webp","imgjson/Jquery.webp","imgjson/js.webp"],
+        "Imagen":"js/imgjson/portafolio.webp"
+    }
+]
